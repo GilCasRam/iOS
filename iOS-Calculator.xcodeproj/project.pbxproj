@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4661E156263CABFC00F32211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661E155263CABFC00F32211 /* AppDelegate.swift */; };
-		4661E158263CABFC00F32211 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661E157263CABFC00F32211 /* SceneDelegate.swift */; };
-		4661E15A263CABFC00F32211 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661E159263CABFC00F32211 /* ViewController.swift */; };
-		4661E15D263CABFC00F32211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4661E15B263CABFC00F32211 /* Main.storyboard */; };
 		4661E15F263CABFE00F32211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4661E15E263CABFE00F32211 /* Assets.xcassets */; };
 		4661E162263CABFE00F32211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4661E160263CABFE00F32211 /* LaunchScreen.storyboard */; };
 		4661E16D263CABFE00F32211 /* iOS_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661E16C263CABFE00F32211 /* iOS_CalculatorTests.swift */; };
@@ -37,9 +34,6 @@
 /* Begin PBXFileReference section */
 		4661E152263CABFC00F32211 /* iOS-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4661E155263CABFC00F32211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4661E157263CABFC00F32211 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4661E159263CABFC00F32211 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4661E15C263CABFC00F32211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4661E15E263CABFE00F32211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4661E161263CABFE00F32211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4661E163263CABFE00F32211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,12 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				4661E155263CABFC00F32211 /* AppDelegate.swift */,
-				4661E157263CABFC00F32211 /* SceneDelegate.swift */,
-				4661E159263CABFC00F32211 /* ViewController.swift */,
-				4661E15B263CABFC00F32211 /* Main.storyboard */,
 				4661E15E263CABFE00F32211 /* Assets.xcassets */,
 				4661E160263CABFE00F32211 /* LaunchScreen.storyboard */,
-				4661E163263CABFE00F32211 /* Info.plist */,
+				4661E19A263CACD100F32211 /* Supporting Files */,
 			);
 			path = "iOS-Calculator";
 			sourceTree = "<group>";
@@ -126,6 +117,14 @@
 				4661E179263CABFE00F32211 /* Info.plist */,
 			);
 			path = "iOS-CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		4661E19A263CACD100F32211 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4661E163263CABFE00F32211 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4661E14D263CABFC00F32211 /* Build configuration list for PBXProject "iOS-Calculator" */;
+			buildConfigurationList = 4661E14D263CABFC00F32211 /* Build configuration list for PBXProject "iOS Calculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,7 +232,6 @@
 			files = (
 				4661E162263CABFE00F32211 /* LaunchScreen.storyboard in Resources */,
 				4661E15F263CABFE00F32211 /* Assets.xcassets in Resources */,
-				4661E15D263CABFC00F32211 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4661E15A263CABFC00F32211 /* ViewController.swift in Sources */,
 				4661E156263CABFC00F32211 /* AppDelegate.swift in Sources */,
-				4661E158263CABFC00F32211 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +292,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4661E15B263CABFC00F32211 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4661E15C263CABFC00F32211 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4661E160263CABFE00F32211 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,7 +426,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5449499J2;
-				INFOPLIST_FILE = "iOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "iOS-Calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5449499J2;
-				INFOPLIST_FILE = "iOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "iOS-Calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -556,7 +544,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4661E14D263CABFC00F32211 /* Build configuration list for PBXProject "iOS-Calculator" */ = {
+		4661E14D263CABFC00F32211 /* Build configuration list for PBXProject "iOS Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4661E17A263CABFE00F32211 /* Debug */,
