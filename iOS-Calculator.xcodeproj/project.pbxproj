@@ -12,6 +12,9 @@
 		4661E162263CABFE00F32211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4661E160263CABFE00F32211 /* LaunchScreen.storyboard */; };
 		4661E16D263CABFE00F32211 /* iOS_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661E16C263CABFE00F32211 /* iOS_CalculatorTests.swift */; };
 		4661E178263CABFE00F32211 /* iOS_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661E177263CABFE00F32211 /* iOS_CalculatorUITests.swift */; };
+		4661E1B4263CB6DF00F32211 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661E1B2263CB6DF00F32211 /* HomeViewController.swift */; };
+		4661E1B5263CB6DF00F32211 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4661E1B3263CB6DF00F32211 /* HomeViewController.xib */; };
+		46B99A5D264DD03600EC942E /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B99A5C264DD03600EC942E /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		4661E173263CABFE00F32211 /* iOS-CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4661E177263CABFE00F32211 /* iOS_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_CalculatorUITests.swift; sourceTree = "<group>"; };
 		4661E179263CABFE00F32211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4661E1B2263CB6DF00F32211 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4661E1B3263CB6DF00F32211 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		46B99A5C264DD03600EC942E /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				4661E155263CABFC00F32211 /* AppDelegate.swift */,
-				4661E15E263CABFE00F32211 /* Assets.xcassets */,
-				4661E160263CABFE00F32211 /* LaunchScreen.storyboard */,
+				4661E1A8263CB3A900F32211 /* View */,
+				4661E1A9263CB3B600F32211 /* Controller */,
+				4661E1A7263CB39C00F32211 /* Model */,
+				4661E1AB263CB3D600F32211 /* Util */,
 				4661E19A263CACD100F32211 /* Supporting Files */,
+				4661E15E263CABFE00F32211 /* Assets.xcassets */,
 			);
 			path = "iOS-Calculator";
 			sourceTree = "<group>";
@@ -125,6 +134,62 @@
 				4661E163263CABFE00F32211 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4661E1A7263CB39C00F32211 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4661E1A8263CB3A900F32211 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4661E1B0263CB69300F32211 /* Home */,
+				4661E1AA263CB3C600F32211 /* Launch */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4661E1A9263CB3B600F32211 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4661E1B1263CB6A200F32211 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4661E1AA263CB3C600F32211 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				4661E160263CABFE00F32211 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		4661E1AB263CB3D600F32211 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				46B99A5C264DD03600EC942E /* UIButtonExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4661E1B0263CB69300F32211 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4661E1B3263CB6DF00F32211 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4661E1B1263CB6A200F32211 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4661E1B2263CB6DF00F32211 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +270,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4661E14D263CABFC00F32211 /* Build configuration list for PBXProject "iOS Calculator" */;
+			buildConfigurationList = 4661E14D263CABFC00F32211 /* Build configuration list for PBXProject "iOS-Calculator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -232,6 +297,7 @@
 			files = (
 				4661E162263CABFE00F32211 /* LaunchScreen.storyboard in Resources */,
 				4661E15F263CABFE00F32211 /* Assets.xcassets in Resources */,
+				4661E1B5263CB6DF00F32211 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4661E156263CABFC00F32211 /* AppDelegate.swift in Sources */,
+				4661E1B4263CB6DF00F32211 /* HomeViewController.swift in Sources */,
+				46B99A5D264DD03600EC942E /* UIButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5449499J2;
 				INFOPLIST_FILE = "iOS-Calculator/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,6 +515,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5449499J2;
 				INFOPLIST_FILE = "iOS-Calculator/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,7 +614,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4661E14D263CABFC00F32211 /* Build configuration list for PBXProject "iOS Calculator" */ = {
+		4661E14D263CABFC00F32211 /* Build configuration list for PBXProject "iOS-Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4661E17A263CABFE00F32211 /* Debug */,
